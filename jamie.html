@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@600&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <title>Jamie's Fashion Corner</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="jamie.html">Jamie's Fashion Corner</a>
+            </div>
+            <div>
+                <a href="spooky.html">Spooky</a>
+            </div>
+            <div>
+                <a href="music.html">Music and More!</a>
+            </div>
+        </nav>
+
+        <h1>Jamie's Fashion Corner</h1>
+
+        <h2 class="subtitle">Today's Game: Which flower dress is best?</h2>
+
+    </header>
+
+    <div class="jamie_body">
+
+        <div class="container">
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/jamie/IMG_1790.jpg" alt="shoulders showing"></div>
+                    <div class="swiper-slide"><img src="images/jamie/IMG_1744.jpg" alt="legs showing"></div>
+                    <div class="swiper-slide"><img src="images/jamie/IMG_1820.jpg" alt="leg slit"></div>
+                    <div class="swiper-slide"><img src="images/jamie/IMG_1861.jpg" alt="short and sexy"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+
+        <form method="post">
+            <fieldset>
+                <legend>Which flower dresses do you like?</legend>
+
+                <div>
+                    <label for="shoulders" class="checkbox_label">Shoulders showing
+                        <input type="checkbox" id="shoulders" name="dresses">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label for="vneck" class="checkbox_label">V-neck
+                        <input type="checkbox" id="vneck" name="dresses">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label for="legslit" class="checkbox_label">Leg slit
+                        <input type="checkbox" id="legslit" name="dresses">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label for="shortdress" class="checkbox_label">Short and lacy
+                        <input type="checkbox" id="shortdress" name="dresses">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div>
+                    <label for="age">Age: </label>
+                    <input type="number" id="age" name="age">
+                </div>
+
+                <div>
+                    <label for="why">Why do you like these flower dresses?</label>
+                    <textarea id="why" name="why" rows="5" cols="33"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
